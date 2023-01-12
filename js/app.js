@@ -42,7 +42,6 @@ function switchForms(v){
 }
 
 function cipher(str, key){
-    console.log(str + " " + key);
   if (key < 0) {
     return cipher(str, key + 26);
   }
@@ -62,7 +61,6 @@ function cipher(str, key){
     }
     output += c;
   }
-  console.log(output);
   document.getElementById("cipheredText").innerHTML = output;
 }
 
